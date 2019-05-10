@@ -154,7 +154,7 @@ const largerPopulation = zooAnimals.filter(animals =>
 
  console.log(largerPopulation);
 
- // then using the filtered animals, map to get a new array with the names.
+ // then using the filtered largerPopulation, map to get a new array with the names (only the names of the animals with a population less than 5).
  let smallpopl = largerPopulation.map(animal => 
   animal.animal_name);
 
