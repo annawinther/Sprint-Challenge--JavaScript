@@ -22,8 +22,6 @@ CuboidMaker.prototype.volume = function() {
   return sum;
 }
 
-
-
 /* == Step 3: Surface Area Method ==
   Create another method using CuboidMaker's prototype that returns the surface area of a given cuboid's length, width, and height. 
 
@@ -43,7 +41,7 @@ CuboidMaker.prototype.surfaceArea = function()  {
 let cuboid = new CuboidMaker(4, 5, 5);
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
- //console.log(cuboid.volume()); // 100
- //console.log(cuboid.surfaceArea()); // 130
+// console.log(cuboid.volume()); // 100
+// console.log(cuboid.surfaceArea()); // 130
 
 
