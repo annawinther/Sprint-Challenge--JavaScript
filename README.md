@@ -1,5 +1,5 @@
 # Sprint Challenge: JavaScript Fundamentals
-
+ 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
 
 ## Instructions
@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The biggest difference between .forEach and .map is that .forEach doesn’t return anything (undefined). It just calls a provided function on each element in the array.
+.map however, will also call a provided function on each element in the array but it also utilises return values and actually returns a new Array of the same size. 
+forEach() — executes a provided function once for each array element.
+map() — creates a new array with the results of calling a provided function on every element in the 	calling array.
+
 2. What is the difference between a function and a method?
+
+The main difference between a function and a method is that a function is defined outside of an object whereas a method is defined as the property of an object.
 
 3. What is closure?
 
+A closure is the combination of a function and the lexical environment within which that function was declared. So when writing a new function, you create a new scope within that function. And what has been declared within that function can access anything outside that function as well - it sees the global scope. However, what is on the outside of that function, cannot see in to the function and what has been declared inside therefore it cannot access it either.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window Binding: When the function is in the global scope, the ‘this’ refers to the object in the scope, the window. Whenever a function is contained in the global scope, the value of 'this' inside of that function will be the window object.
+Implicit Binding: When you have an object, the value of this refers to whatever is noted but the dot. So anything that is after the dot is what ‘this’ refers to. Whenever a function is called by a preceding dot, the object before that dot is this. 
+New Binding: Whenever a constructor function is used, 'this' refers to the specific instance of the object that is created and returned by the constructor function.
+Explicit Binding: Whenever JavaScript’s call or apply method is used, 'this' is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+We need super() in an extended class to access whatever properties the parent it is being inherited from has. It is being used to invoke the parent constructor.
 
 ## Project Set up
 
